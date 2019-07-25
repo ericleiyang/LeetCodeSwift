@@ -13,28 +13,21 @@ struct Stack {
         return temp[index]
     }
     
-    mutating func shouldPush(_ s: String) -> Bool {
-        if balanceIndex == -1 {
-            return true
-        }
-        
-        if let index = temp.lastIndex(of: s){
-            if let peek = self.peek(balanceIndex), peek == s {
-                
-            }
-            
-        }else {
-            balanceIndex = self.temp.count - 1
-            return true
-        }
-    }
-    
     mutating func pop() -> String {
         return temp.removeFirst()
     }
     
     mutating func push(_ s: String) {
         temp.insert(s, at: 0)
+    }
+}
+
+func lengthOfPalindrome(_ s: String, left: Int, right: Int){
+    var l = left
+    var r = right
+    
+    while l > 0, r < s.count, s.reversed()[l] == s[r] {
+        
     }
 }
 
