@@ -30,3 +30,29 @@ class Solution {
         midTraversal(&values, node.right)
     }
 }
+
+struct TreeNode<T: Comparable> {
+    var value: T
+    var left: TreeNode?
+    var right: TreeNode?
+    
+    init(_ value: T, left: TreeNode?, right: TreeNode?) {
+        self.value = value
+        self.left = left
+        self.right = right
+    }
+}
+
+struct BinaryTree<T: Comparable> {
+    var head: TreeNode<T>?
+    
+    func addNode(_ node: TreeNode) {
+        if let head = head {
+            
+        }
+    }
+}
+
+struct BPlusTree {
+    
+}

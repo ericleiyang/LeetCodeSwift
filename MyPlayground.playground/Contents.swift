@@ -1,41 +1,27 @@
 import UIKit
 
-
-class Graph {
-    var adj = [[Bool]] ( init with false)
-    var count: Int = 0
-    
-    var visited = [[Bool]](false)
-    
-    
-    func putLand(x, y) {
-        
-        adj[x][y] = true
-        count = 0
-        
-        for var i ..< adj.count {
-            for var j .. < adj[i].count {
-                
-                if cell is not visited
-                if cell is occupied {
-                     BFT(i,j) {
-                        count += 1
-                    }
-                }
-            }
-        }
-    }
-    
-    
-    func BFT(x, y) -> Bool{
-        let land = adj[x][y]
-        
-        adjs of land
-        
-        
-    }
-    
-    
-    
+func gcd(_ arr: [Int], count: Int) {
     
 }
+
+func gcdTwo(_ num1: Int, _ num2: Int) -> Int {
+    let r = num1 % num2
+    print("num1: \(num1)")
+    print("num2: \(num2)")
+    print("r: \(r)")
+    
+    if r != 0 {
+        return gcdTwo(num2, r)
+    }else {
+        return num2
+    }
+}
+
+func get() {
+    let d = gcdTwo(4, 10)
+    
+    print(d)
+}
+
+
+get()
